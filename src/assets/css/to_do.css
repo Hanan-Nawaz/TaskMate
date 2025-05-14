@@ -1,0 +1,205 @@
+body {
+    background-color: rgb(58, 56, 56);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .heading {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header .heading .first_part {
+    color: rgb(210, 210, 99);
+}
+
+.header .heading .second_part {
+    color: rgb(40, 40, 160);
+}
+
+.container-sub {
+    margin-top: 40px;
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.container-sub .input-add {
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    border: 0;
+    border-style: solid;
+    height: 35px;
+    padding: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.container-sub .btn-add {
+    margin-left: 5%;
+    width: 15%;
+    border: 0;
+    color: white;
+    background-color: rgb(40, 40, 160);
+}
+
+.container-sub .btn-add:hover{
+    border-radius: 17px;
+}
+
+.sub-details {
+    display: flex;
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.sub-details .left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+.sub-details .left .text {
+    color: rgb(210, 210, 99);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.sub-details .left .details {
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 3px;
+    background: rgb(88, 88, 88);
+}
+
+.sub-details .right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+}
+
+.sub-details .right .text {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.sub-details .right .details {
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 15px;
+    border-radius: 7px;
+    margin-left: 3px;
+    background: rgb(88, 88, 88);
+}
+
+.task-card{
+    display: flex;
+    background-color: rgb(40, 40, 40);
+    width: 70%;
+    height: 40px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.task-card .checkbox {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    accent-color: rgb(40, 40, 160);
+    border: 1px solid rgb(210, 210, 99);
+    background-color: transparent;
+}
+
+.task-card .checkbox:checked {
+    background-color: rgb(40, 40, 160);
+}
+
+.task-card .checkbox:checked::before {
+    content: '✔';
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    padding-top: 1px;
+}
+
+.task-card .task-desc {
+    color: white;
+    margin-left: 4px;
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.task-card .checkbox:checked + .task-desc {
+    text-decoration: line-through;
+}
+
+.task-card .btn-del {
+    background-color: transparent;
+    border: 0;
+    color: rgb(150, 150, 150);
+}
+
+.task-card .btn-del:hover {
+    color: rgb(40, 40, 160);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(210, 210, 99);
+}
+
+.footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
